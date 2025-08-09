@@ -119,7 +119,7 @@ if (subTitle.length > maxWidth) {
 } else {
   subTitleArray.push(subTitle);
 }
-const author = "Remodified by XNIL6X with ♡";
+const author = "Remodified by IRFAN with ♡";
 const srcUrl = "Source code: https://github.com/xnil6x-obito/xnil6xbot-obito";
 const fakeRelease = "ALL VERSIONS NOT RELEASED HERE ARE FAKE";
 for (const t of subTitleArray) {
