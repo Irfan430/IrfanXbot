@@ -9,20 +9,29 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+        node-version: [16.x, 18.x]
     steps:
-    - uses: actions/checkout@v3  # Updated to v3
-    
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3  # Updated to v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'  # You can also try removing this if issues persist
-    
-    - run: npm ci  # Using ci instead of install for more reliable builds
-    - run: npm start
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
+
+      - name: Run CI script (does not start the bot)
+        run: npm run ci --if-present
+
+      - name: List workspace (debug)
+        run: ls -la
