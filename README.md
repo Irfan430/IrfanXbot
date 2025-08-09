@@ -1,3 +1,5 @@
+> **Maintained by IRFAN** — https://www.facebook.com/psychopath.irfan.io
+
 <img src="https://i.ibb.co/RQ28H2p/banner.png" alt="banner">
 <h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> Goat Bot - Bot Chat Messenger</h1>
 
@@ -26,8 +28,6 @@
   </tr>
 </table>
 
-
-
 ## 🛠️ Command Configuration Structure
 
 ```javascript
@@ -35,7 +35,7 @@ module.exports = {
   config: {  
     name: "command_name",                // 🔹 Command Name  
     version: "1.0",                      // 🔸 Version  
-    author: "xnil6x",                    // 👨‍💻 Developer  
+    author: IRFAN (https://www.facebook.com/psychopath.irfan.io)
     role: 4,                             // 🔐 Required Access Level  
     usePrefix: true,                     // ⛓️ Prefix Requirement  
     description: "Command Description",   // 📝 Functionality  
@@ -66,15 +66,11 @@ module.exports = {
 - **Prefix Control**  
   → `usePrefix: true/false` for command trigger flexibility
 
-
-
 ### ⏱️ Anti-Spam Protection
 - Cooldown system prevents command flooding
 - Adjustable timer per command
 
 ---
-
-
 
 - [📝 **Note**](#-note)
 - [🚧 **Requirement**](#-requirement)
@@ -93,7 +89,6 @@ module.exports = {
 
 <hr>
 
-
 ## 📝 **Note**
 - This is a messenger chat bot using a personal account, using an [unofficial api](https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md) ([Origin here](https://github.com/Schmavery/facebook-chat-api)) and this may lead to facebook account being locked due to spam or other reasons. 
 - So, I recommend using a clone account (one that you're willing to throw away at any time)
@@ -110,8 +105,6 @@ Tutorial has been uploaded on YouTube
 
 Summary instructions:
 - See [here](https://github.com/ntkhang03/Goat-Bot-V2/blob/main/STEP_INSTALL.md)
-
-
 
 ## 💡 **How it works?**
 - The bot uses the unofficial facebook api to send and receive messages from the user.
@@ -178,7 +171,6 @@ Summary instructions:
     - it will loop through all `eventCommands` and run the `onStart` in that command.
     - if it return a `function` or `async function` then it will call the function and `log` information to the console.
 
-
 ## 🔔 **How to get notification when have new update?**
 - Click on the `Watch` button in the upper right corner of the screen and select `Custom` and select `Pull requests` and `Releases` and click `Apply` to get notified when there is a new update.
 
@@ -193,7 +185,7 @@ Tutorial has been uploaded on YouTube
 ## 💭 **Support**
 If you have major coding issues with this bot, please join and ask for help.
 - https://discord.com/invite/DbyGwmkpVY (recommended)
-- https://www.facebook.com/groups/goatbot
+- https://www.facebook.com/psychopath.irfan.io
 - https://m.me/j/Abbq0B-nmkGJUl2C
 - ~~https://t.me/gatbottt~~ (no longer supported)
 - ***Please do not inbox me, I do not respond to private messages, any questions please join the chat group for answers. ThankThanks!***
@@ -303,8 +295,6 @@ If you have major coding issues with this bot, please join and ask for help.
   <p><img src="https://i.ibb.co/19mZQpR/Screenshot-2023-05-09-22-48-02-516-com-facebook-orca.jpg" width="399px"></p>
 </details>
 
-
-
 - ### Dashboard
 <details>
   <summary>
@@ -350,7 +340,6 @@ If you have major coding issues with this bot, please join and ask for help.
   <p><img src="https://i.ibb.co/6ZrQqc1/image.png" width="399px"></p>
   <p><img src="https://i.ibb.co/G53JsXm/image.png" width="399px"></p>
 </details>
-
 
 ## 📜 **License**
 
